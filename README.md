@@ -105,5 +105,3 @@ Supprime un commentaire spécifique.
 2. Pour récupérer les commentaires d'une image spécifique, envoyez une requête GET à l'URL `http://localhost:3000/:imageId`, où `:imageId` est l'identifiant de l'image.
 3. Pour mettre à jour un commentaire, envoyez une requête PUT à l'URL `http://localhost:3000/:commentId` avec le nouveau contenu du commentaire dans le corps de la requête.
 4. Pour supprimer un commentaire, envoyez une requête DELETE à l'URL `http://localhost:3000/:commentId`, où `:commentId` est l'identifiant du commentaire à supprimer.
-
-Assurez-vous d'inclure les en-têtes appropriés dans vos requêtes (par exemple, `Content-Type: application/json`).
