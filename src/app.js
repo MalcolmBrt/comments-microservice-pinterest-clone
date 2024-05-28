@@ -13,7 +13,7 @@ app.use("/comments", commentRoutes);
 
 async function start() {
 	try {
-		await mongoose.connect("mongodb://localhost:27017/comments");
+		await mongoose.connect(process.env.MONGO_URI);
 		app.listen(port, () => console.log(`Comments API listening on port ${port}`));
 	} catch (err) {
 		console.log(err);
